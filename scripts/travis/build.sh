@@ -1,0 +1,2 @@
+echo "Build for scheme Mobilizer with profile $PROVISIONING_PROFILE_UUID_BETA"
+xctool -workspace Mobilizer.xcworkspace -scheme Mobilizer -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="$DEVELOPER_NAME" PROVISIONING_PROFILE="$PROVISIONING_PROFILE_UUID_BETA"
